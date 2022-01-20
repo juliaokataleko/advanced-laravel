@@ -14,7 +14,6 @@ class PayOrderController extends Controller
     {
         // $paymentGateway = new PaymentGateway("USD");
         $order = $orderDetails->all();
-
         dd($bankPaymentGateway->charge(2000));
     }
 }
