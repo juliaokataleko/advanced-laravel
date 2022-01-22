@@ -17,3 +17,9 @@ View composers are callbacks or class methods that are called when a view is ren
 <p>
 A polymorphic relationship allows the child model to belong to more than one type of model using a single association. For example, imagine you are building an application that allows users to share blog posts and videos. In such an application, a Comment model might belong to both the Post and Video models.
 </p>
+
+## 4 - Facades
+
+<p>
+Laravel facades serve as "static proxies" to underlying classes in the service container, providing the benefit of a terse, expressive syntax while maintaining more testability and flexibility than traditional static methods.
+</p>

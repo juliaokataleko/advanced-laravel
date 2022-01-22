@@ -8,6 +8,7 @@ use App\Billing\PaymentGateway;
 use App\Billing\PaymentGatewayContract;
 use App\Http\View\Composers\ChannelComposer;
 use App\Models\Channel;
+use App\PostCardSendingService;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -60,5 +61,10 @@ class AppServiceProvider extends ServiceProvider
 
         // Option 3 - Dedicated class
         View::composer(['partials.channels.*'], ChannelComposer::class);
+
+        // Facades
+        $this->app->singleton('PostCard', function($app) {
+            return new PostCardSendingService('us', 4, 6);
+        });
     }
 }
