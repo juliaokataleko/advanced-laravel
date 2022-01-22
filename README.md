@@ -23,3 +23,10 @@ A polymorphic relationship allows the child model to belong to more than one typ
 <p>
 Laravel facades serve as "static proxies" to underlying classes in the service container, providing the benefit of a terse, expressive syntax while maintaining more testability and flexibility than traditional static methods.
 </p>
+
+## 5 - Macros
+
+<p>
+Macro is a powerful feature of the Laravel framework. Laravel Macros allow you to add custom functionality to internal Laravel components. <br>
+From: https://dzone.com/articles/how-to-use-laravel-macro-with-example
+</p>

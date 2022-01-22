@@ -5,7 +5,9 @@ use App\Http\Controllers\PayOrderController;
 use App\Http\Controllers\PostController;
 use App\PostCard;
 use App\PostCardSendingService;
+use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Str;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,4 +37,14 @@ Route::get('posts', function() {
 
 Route::get('facades',function() {
     PostCard::hello("Good Morning Angola", 'test@test.com');
+});
+
+// Macros
+Route::get('macros', function() {
+    // dd(Str::prefix(123456466));
+
+    // using macros to format currency
+    dd(Str::formatCurrency(100000));
+
+    return Response::errorJson("An error occurred! BOOM!!");
 });
