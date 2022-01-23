@@ -30,3 +30,11 @@ Laravel facades serve as "static proxies" to underlying classes in the service c
 Macro is a powerful feature of the Laravel framework. Laravel Macros allow you to add custom functionality to internal Laravel components. <br>
 From: https://dzone.com/articles/how-to-use-laravel-macro-with-example
 </p>
+
+
+## 6 - Pipelines Pattern
+
+<p>
+Pipeline is a design pattern specifically optimized to handle stepped changes to an object. Think of an assembly line, where each step is a pipe and by the end of the line, you have your transformed object. <br>
+From: https://dev.to/abrardev99/pipeline-pattern-in-laravel-278p
+</p>

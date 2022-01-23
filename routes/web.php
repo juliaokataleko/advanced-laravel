@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ChannelController;
+use App\Http\Controllers\MovieController;
 use App\Http\Controllers\PayOrderController;
 use App\Http\Controllers\PostController;
 use App\PostCard;
@@ -48,3 +49,6 @@ Route::get('macros', function() {
 
     return Response::errorJson("An error occurred! BOOM!!");
 });
+
+// pipelines
+Route::get('movies', [MovieController::class, 'index']);
