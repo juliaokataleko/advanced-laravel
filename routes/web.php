@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ChannelController;
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\PayOrderController;
 use App\Http\Controllers\PostController;
@@ -52,3 +53,9 @@ Route::get('macros', function() {
 
 // pipelines
 Route::get('movies', [MovieController::class, 'index']);
+
+// Repository pattern
+Route::get('/customers', [CustomerController::class, 'index']);
+Route::get('/customers/{customerId}/show', [CustomerController::class, 'show']);
+Route::get('/customers/{customerId}/update', [CustomerController::class, 'update']);
+Route::get('/customers/{customerId}/delete', [CustomerController::class, 'destroy']);

@@ -38,3 +38,10 @@ From: https://dzone.com/articles/how-to-use-laravel-macro-with-example
 Pipeline is a design pattern specifically optimized to handle stepped changes to an object. Think of an assembly line, where each step is a pipe and by the end of the line, you have your transformed object. <br>
 From: https://dev.to/abrardev99/pipeline-pattern-in-laravel-278p
 </p>
+
+## 7 - Repository Pattern
+
+<p>
+The repository pattern consists of adding a layer of classes that are in charge of accessing the data source and obtaining the different data models. <br>
+From: https://dev.to/victoor/repository-pattern-in-laravel-it-s-worth-3mn4
+</p>
